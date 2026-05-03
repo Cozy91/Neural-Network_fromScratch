@@ -118,7 +118,7 @@ for yr in sorted(test_df["year"].unique()): #selects one data for example uhhh i
         correct += 1
     predicted = yr_df.loc[best_idx, "name"]
     actual = ", ".join(yr_df[yr_df["Goty"] == 1]["name"].values)
-    print(f"{yr} {mark}  predicted: {predicted}  |  actual: {actual}")
+    print(f"{yr} predicted: {predicted}  |  actual: {actual}")
 
 print(f"\naccuracy: {correct}/{total} = {correct/total*100}%")
 
